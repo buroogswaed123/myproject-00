@@ -1,0 +1,337 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+        background-size: cover;
+        color: #fff; /* Adjust text color for better readability */
+       
+            background: linear-gradient(135deg, #e0f2f1, #80cbc4);
+        }
+        
+    
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Header */
+header {
+    background-color: #004d40;
+    color: #ffffff;
+    padding: 1em 2em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Section */
+main {
+    padding: 1em 2em;
+}
+
+/* Buttons */
+button {
+    padding: 12px 24px;
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #004d40;
+    transform: translateY(-2px);
+}
+
+/* Search Box */
+#search {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    font-size: 16px;
+}
+
+/* Contact List */
+#contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.contact-item {
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    width: calc(50% - 20px);
+}
+
+.contact-item img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.contact-item:hover {
+    background-color: #e0f2f1;
+}
+
+.contact-item span {
+    flex: 1;
+    color: #333;
+}
+
+/* Popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: #004d40;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+    font-size: 14px;
+}
+
+/* Form Elements */
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+form input[type="file"] {
+    padding: 0;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#profile-pic-preview {
+    display: block;
+    margin-top: 10px;
+    max-width: 150px;
+    height: auto;
+}
+
+
+/* Contact Count Display */
+#contact-count {
+    text-align: left;
+    font-size: 20px;
+    color: #333;
+    margin: 25px 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+  
+    h1 {
+        font-size: 40px;  /* Adjust header font size for small screens */
+    }
+  
+    .contact-img {
+        width: 50px;
+        height: 50px;
+    }
+  
+    .contact-name {
+        font-size: 14px;
+    }
+  
+    .actions button {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+  
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .contact-img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+  
+    .contact-info {
+        font-size: 14px;
+    }
+  
+    .actions {
+        margin-top: 10px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 85%;
+        padding: 15px;
+    }
+  
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .contact-img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+  
+    .contact-info {
+        font-size: 15px;
+    }
+  }
+  /* Base Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+    background-image: linear-gradient(-225deg, #232526 0%, #414345 100%);
+  }
+  
+  /* Header Dark Mode */
+  header.dark-mode {
+    background-image: linear-gradient(-225deg, #333 0%, #555 48%, #777 100%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  }
+  
+  header.dark-mode h1 {
+    color: #f1f1f1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  header.dark-mode h1:hover {
+    color: #ff9f9f;
+  }
+  
+  /* Main Content Dark Mode */
+  .main.dark-mode {
+    background-color: #1e1e1e;
+  }
+  
+  .container.dark-mode {
+    background-color: #2b2b2b;
+    background-image: linear-gradient(to right, #444 0%, #555 100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .search-bar.dark-mode input {
+    background-color: #3a3a3a;
+    color: #e0e0e0;
+    border: 1px solid #555;
+  }
+  
+  .contact-item.dark-mode {
+    border-bottom: 1px solid #444;
+  }
+  
+  .contact-info.dark-mode {
+    color: #f1f1f1;
+  }
+  
+  .actions.dark-mode button {
+    color: #f1f1f1;
+  }
+  
+  .actions.dark-mode button:hover {
+    color: #ff9f9f;
+  }
+  
+  /* Footer Dark Mode */
+  .footer.dark-mode {
+    background-image: linear-gradient(-225deg, #333 0%, #555 48%, #777 100%);
+    color: #e0e0e0;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Modal Dark Mode */
+  .modal-content.dark-mode {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+  }
+  
+  .close-btn.dark-mode {
+    color: #f1f1f1;
+  }
+  
+  /* Dark Mode Responsive Adjustments */
+  @media (max-width: 500px) {
+    header.dark-mode h1 {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    header.dark-mode h1 {
+      font-size: 60px;
+    }
+  }

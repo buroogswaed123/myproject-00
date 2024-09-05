@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Phone Book</h1>
+
+    <!-- Search Box -->
+    <input type="text" id="search" placeholder="Search Contacts">
+<!-- Contact Count Display -->
+<p id="contact-count">Total Contacts: 0</p>
+    <!-- Buttons -->
+
+    <button id="add-contact-btn">Add New Contact</button>
+    <button id="delete-all-btn">Delete All Contacts</button>
+    <button id="darkModeToggle">Switch to dark  mode </button>
+
+    <!-- Contact List -->
+    <div id="contact-list"></div>
+
+
+    <!-- Popup Form -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <button id="close-popup-btn">Close</button>
+            <form id="contact-form">
+                <input type="hidden" id="record-id">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required>
+                <label for="address">Address:</label>
+                <input type="text" id="address">
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+                <label for="notes">Notes:</label>
+                <textarea id="notes"></textarea>
+                <label for="profile-pic">Profile Picture:</label>
+                <input type="file" id="profile-pic" accept="image/*">
+                <img id="profile-pic-preview" src="" alt="Profile Picture Preview" style="display:none; width: 100px; height: 100px; object-fit: cover;">
+                <button type="submit" id="submit-btn">Save</button>
+                <button type="button" id="cancel-btn">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    
+
+    
+    <footer>
+        <p> Project - buroog  & swaed  &copy; 2024</p>
+    </footer>
+    
+
+    
+    <script src="js.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
